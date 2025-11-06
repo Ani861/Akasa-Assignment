@@ -2,7 +2,7 @@
 git clone https://github.com/Ani861/Akasa-Assignment
 
 
-cd Akasa-Assignment
+             cd Akasa-Assignment
 
 2. Create and Activate Virtual Environment
 On Windows:
