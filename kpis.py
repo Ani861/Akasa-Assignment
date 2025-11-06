@@ -14,7 +14,7 @@ ORDER_FILE = r"C:\Users\Aniruddha G K\Downloads\Akasa-Assignment\sampledata\Task
 
 
 def normalize_mobile(m):
-    """Normalize mobile number format."""
+   
     if pd.isna(m):
         return None
     s = str(m).strip()
@@ -103,8 +103,12 @@ def regional_revenue(customers, orders):
 
 def top_spenders_last_30_days(customers, orders, days=30):
    
-    now = datetime.utcnow()
+    orders["order_date_time"] = pd.to_datetime(orders["order_date_time"], utc=True, errors="coerce")
+
+    now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=days)
+
+    
     recent_orders = orders[orders["order_date_time"] >= cutoff]
 
     merged = recent_orders.merge(customers, on="mobile_number", how="left")
