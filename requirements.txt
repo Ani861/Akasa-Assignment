@@ -1,0 +1,5 @@
+pandas
+xmltodict
+mysql-connector-python
+sqlalchemy
+
