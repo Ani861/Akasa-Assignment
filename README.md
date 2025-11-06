@@ -1,5 +1,5 @@
 1. Clone the Repository
-git clone https://github.com/<your-username>/Akasa-Assignment.git
+git clone https://github.com/Ani861/Akasa-Assignment
 cd Akasa-Assignment
 
 2. Create and Activate Virtual Environment
