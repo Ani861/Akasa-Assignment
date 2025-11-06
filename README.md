@@ -4,15 +4,15 @@ cd Akasa-Assignment
 
 2. Create and Activate Virtual Environment
 On Windows:
-python -m venv venv
-venv\Scripts\activate
+      python -m venv venv
+      venv\Scripts\activate
 
-     On macOS / Linux:
+On macOS / Linux:
      python3 -m venv venv
      source venv/bin/activate
 
 3. Install Dependencies
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Prepare Input Data
 
@@ -26,8 +26,8 @@ Ensure your data files are placed correctly:
 
 Open MySQL and create a database:
 
-CREATE DATABASE etl_db;
-USE etl_db;
+   CREATE DATABASE etl_db;
+   USE etl_db;
 
 
 Run the schema file:
