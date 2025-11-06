@@ -7,9 +7,9 @@ On Windows:
 python -m venv venv
 venv\Scripts\activate
 
-On macOS / Linux:
-python3 -m venv venv
-source venv/bin/activate
+     On macOS / Linux:
+     python3 -m venv venv
+     source venv/bin/activate
 
 3. Install Dependencies
 pip install -r requirements.txt
@@ -18,11 +18,11 @@ pip install -r requirements.txt
 
 Ensure your data files are placed correctly:
 
-sampledata/
- ├── Task_DE_new_customers.csv
- └── Task_DE_new_orders.xml
+       sampledata/
+            ├── Task_DE_new_customers.csv
+            └── Task_DE_new_orders.xml
 
- 5. Set Up MySQL Database
+5. Set Up MySQL Database
 
 Open MySQL and create a database:
 
@@ -34,8 +34,7 @@ Run the schema file:
 
 mysql -u root -p etl_db < schema.sql
 
-
- 6. Run the ETL Script
+6. Run the ETL Script
 
 Choose your environment:
 
@@ -51,13 +50,8 @@ data.py
 🔹 With MySQL Integration
 python data.py
 
- 7. (Optional) Run Streamlit Dashboard
 
-If your project includes a dashboard:
-
-streamlit run app.py
-
- 8. Verify Output
+7. Verify Output
 
 Check:
 
