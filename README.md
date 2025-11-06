@@ -63,4 +63,4 @@ Check:
 
 MySQL tables (customers, orders, dead_letter, etc.)
 
-KPI results printed in the console or displayed in Streamlit.
+KPI results printed in the console .
